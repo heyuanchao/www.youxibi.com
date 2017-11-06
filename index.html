@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>官网</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/animate.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script>
+        var timer = {};
+
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                verticalCentered: false,
+                slidesNavigation: true,
+                afterLoad: function(anchorLink, index){
+                    console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index );
+                    if (anchorLink == "firstPage") {
+                        timer[0] = setInterval(function () {
+                            $.fn.fullpage.moveSlideRight();
+                        }, 5000);
+                    } else {
+                        for(var t in timer){
+                            clearInterval(timer[t]);
+                        }
+                    }
+                },
+            });
+        });
+    </script>
+</head>
+<body class="index">
+<header class="header">
+    <div class="wrapper">
+        <!-- logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo_yxb.png">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li class="active"><a href="javascript:;"><span style="visibility: hidden;">密</span>首页<span style="visibility: hidden;">密</span></a></li>
+                <li><a href="game.html"><span style="visibility: hidden;">密</span>游戏<span style="visibility: hidden;">密</span></a></li>
+                <li><a href="about.html">联系我们</a></li>
+                <span style="line-height: 42px;"><a href="javascrip:;" style="color: white; font-size: 12px;">登录/注册</a></span>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="download" style="visibility: hidden;">
+    <div class="wrapper">
+        <div id="android" class="box viewport-flip">
+            <a href="javascript:;" class="list flip reverse out">
+                <img src="img/android_ewm.png">
+            </a>
+            <a href="javascript:;" class="list flip reverse">
+                <img src="img/android.png">
+            </a>
+        </div>
+
+        <div id="ios" class="box viewport-flip">
+            <a href="javascript:;" class="list flip reverse out">
+                <img src="img/ios_ewm.png">
+            </a>
+            <a href="javascript:;" class="list flip reverse">
+                <img src="img/ios.png">
+            </a>
+        </div>
+
+        <div id="pc" class="box">
+            <a href="javascript:;">
+                <img src="img/pc.png">
+            </a>
+        </div>
+
+        <!--<div id="pc" class="box viewport-flip">-->
+            <!--<a href="javascript:;" class="list flip reverse out">-->
+                <!--<img src="img/pc.png">-->
+            <!--</a>-->
+            <!--<a href="javascript:;" class="list flip reverse">-->
+                <!--<img src="img/pc.png">-->
+            <!--</a>-->
+        <!--</div>-->
+    </div>
+</div>
+
+<div id="fullpage">
+    <div class="section">
+        <div class="slide" id="slide1"></div>
+        <div class="slide" id="slide2"></div>
+        <div class="slide" id="slide3"></div>
+        <!--<div class="slide" id="slide4"></div>-->
+        <!--<div class="slide" id="slide5"></div>-->
+    </div>
+</div>
+
+<!--<div style="margin-top: 50px;">-->
+    <!--<img src="img/game.jpg" style="width: 100%;">-->
+<!--</div>-->
+
+<footer class="footer">
+    <div class="wrapper">
+        <div class="p">
+            <!--<p><span>免责声明</span>&nbsp;|&nbsp;<span>联系我们</span></p>-->
+            <p>Copyright &copy; 2017, YOUXIBI Co., Ltd. All Rights Reserved.  深圳市游戏币网络科技有限公司    <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备15001773号-1</a> 粤网文[2017]7947-1948号</p>
+        </div>
+    </div>
+</footer>
+<script src="js/index.js"></script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260911531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260911531%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
