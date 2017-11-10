@@ -1,0 +1,14 @@
+.game section {
+    width: 1130px;
+    padding-top: 80px;
+}
+
+.game .wrapper img {
+    width: 100%;
+}
+
+.game .wrapper .panel {
+    background: url("../img/game.jpg") top center no-repeat;
+    background-size: contain;
+    height: 800px;
+}
