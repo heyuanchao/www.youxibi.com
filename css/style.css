@@ -99,7 +99,6 @@ abbr, acronym {
 .wrapper {
     width: 1000px;
     margin: 0 auto;
-    position: relative;
 }
 
 body {
@@ -151,7 +150,9 @@ body {
 }
 
 .header .nav .login {
-    margin-left: 25px; line-height: 42px; color: white;
+    margin-left: 25px;
+    line-height: 42px;
+    color: white;
 }
 
 .header .nav .login a {
@@ -188,27 +189,6 @@ body {
     width: 800px;
     padding-top: 180px;
     padding-bottom: 95px;
-}
-
-.login section {
-    width: 1130px;
-    padding-top: 110px;
-}
-
-.login .layout {
-    background: #fff;
-    width: 410px;
-    min-height: 524px;
-    float: right;
-}
-
-.login .login_area {
-    width: 300px;
-}
-
-.login h3 {
-    font-size: 24px;
-    color: #ff7f26;
 }
 
 .register section {
@@ -254,4 +234,8 @@ body {
 
 #cnzz_stat_icon_1260911531 {
     display: none;
+}
+
+.btn_orange {
+    background: #ef5b00;
 }
