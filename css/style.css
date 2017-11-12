@@ -65,6 +65,29 @@ abbr, acronym {
     visibility: hidden;
 }
 
+input {
+    background: 0;
+    border: 0 none;
+}
+
+a, label, :focus {
+    outline: 0 none;
+}
+
+.labelbox {
+    display: block;
+    margin-bottom: 14px;
+    border: 1px solid #e0e0e0;
+}
+
+.labelbox input {
+    display: block;
+    width: 306px;
+    height: 22px;
+    line-height: 22px;
+    padding: 13px 16px 13px 14px;
+}
+
 /*Adding background for the slides
 * --------------------------------------- */
 #slide1 {
@@ -191,10 +214,6 @@ body {
     padding-bottom: 95px;
 }
 
-.register section {
-    width: 800px;
-}
-
 .resetPassword section {
     width: 800px;
 }
@@ -238,4 +257,14 @@ body {
 
 .btn_orange {
     background: #ef5b00;
+}
+
+.btnadpt {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 14px;
 }

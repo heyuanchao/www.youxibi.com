@@ -1,9 +1,9 @@
 
-.resetPassword section {
+.register section {
     padding-top: 120px;
 }
 
-.resetPassword .layout {
+.register .layout {
     width: 854px;
     margin: 0 auto;
     padding-bottom: 10px;
@@ -15,7 +15,7 @@
     min-height: 400px;
 }
 
-.resetPassword .title {
+.register .title {
     font-size: 24px;
     color: #ff7f26;
     text-align: center;
